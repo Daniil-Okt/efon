@@ -1,0 +1,9 @@
+// Заголовки, общие БЄМ блоки и проче...
+* {
+    line-height: 150%;
+}
+.gradient-text {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(114.23deg, #A088FB 0%, #B8A6FB 100%),
+}
