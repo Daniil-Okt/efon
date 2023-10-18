@@ -17,11 +17,14 @@
     padding: 0 rem(40);
     position: relative;
     z-index: 50;
-    @media(max-width:1150px){
+    @media(max-width:1260px){
       padding: 0 rem(24);
     }
     @media(max-width:750px){
       padding: 0 rem(16);
+    }
+    @media(max-width:580px){
+        height: rem(84);
     }
     // .header-is-sticky & {
     //   height: rem($headerHeight - 50);
@@ -45,6 +48,7 @@
     display: flex;
     gap: rem(10);
     justify-content: end;
+    align-items: center;
     min-width: rem(114);
     
     a {
@@ -60,7 +64,7 @@
     }
     a.active {
       color: var(--white-color);
-      font-weight: 500;
+      font-weight: 600;
       &:hover {
         color:rgba(246, 244, 255, 0.8);
       }
@@ -96,6 +100,22 @@
       .menu-open & {
         right: 0;
       }
+      
+      @media(max-width:400px){
+        &::before {
+          position: absolute;
+          content: '';
+          width: rem(360);
+          height: rem(550);
+          background: url(@img/gradient-fon.png) no-repeat center center / contain;
+          top:0;
+          right: 0;
+      }
+      }
+  }
+  @media(max-width:580px){
+    top: rem(85);
+    padding: rem(40) rem(16) rem(125);
   }
   &__bottom {
     display: flex;
@@ -137,28 +157,56 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     align-items: center;
   }
 
   &__link {
+    top: 0;
     color: var(--white-color);
     font-size: rem(20);
     font-weight: 600;
     @media(max-width:750px){
       font-size: rem(32);
-     
+    }
+    transition: all 0.3s ease-in-out  0s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.04);
+      // letter-spacing: 5px;
+      text-shadow: 0px 1px 5px #ffc14f7c;
     }
   }
   &__item-button {
+    cursor: pointer;
     padding: rem(2) rem(2);
     border-radius: 16px;
     background: linear-gradient(95.26deg, #FFFD4F 0.23%, #FFC24F 100.23%);
+    transition: all 0.2s ease-in-out  0s;
+    &:hover {
+      a {
+        text-shadow: 0px 1px 5px #ffc14f7c;
+      }
+    }
     a {
       display: inline-block;
       padding: rem(5.5) rem(22);
       border-radius: 15px;
       background-color: #292758;
+      &:hover {
+        transform: scale(1);
+        // letter-spacing: 5px;
+        text-shadow: 0px 1px 5px #ffc14f7c;
+      }
+    }
+    @media(max-width:440px){
+      max-width: rem(330);
+      width: 100%;
+      a {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   

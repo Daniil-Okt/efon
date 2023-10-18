@@ -18,6 +18,12 @@
   max-width: rem($maxWidthContainer);
   margin: 0 auto;
   padding: 0 rem($mainOffset);
+  @media(max-width:1260px){
+    padding: 0 rem(24);
+  }
+  @media(max-width:750px){
+    padding: 0 rem(16);
+  }
 }
 
 // Стили отзывчивых картинок (IBG) ============================================

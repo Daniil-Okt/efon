@@ -8,6 +8,13 @@
 @font-face {
 	font-family: CodecPro;
 	font-display: swap;
+	src: url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: CodecPro;
+	font-display: swap;
 	src: url("../fonts/CodecPro-Fat.woff2") format("woff2");
 	font-weight: undefined;
 	font-style: normal;

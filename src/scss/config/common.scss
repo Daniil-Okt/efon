@@ -5,5 +5,22 @@
 .gradient-text {
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(114.23deg, #A088FB 0%, #B8A6FB 100%),
+    background: linear-gradient(114.23deg, #A088FB 0%, #B8A6FB 100%);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.button {
+    display: inline-block;
+    padding: rem(22) rem(32) rem(18);
+    border-radius: 16px;
+    background: var(--Gradient, linear-gradient(95deg, #8060F6 0.23%, #A088FB 100.23%));
+    font-size: rem(20);
+    text-align: center;
+    color: var(--white-color);
+    font-weight: 900;
+    line-height: 100%;
+    transition: all 0.2s ease-in-out  0s;
+    // font-feature-settings: 'clig' off, 'liga' off;
 }
