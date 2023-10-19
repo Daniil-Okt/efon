@@ -63,7 +63,7 @@ export  function toggleActiveClass(elements) {
           el.classList.remove('_active')
         }
       });
-      element.classList.add('_active');
+      element.classList.toggle('_active');
     });
   });
 }

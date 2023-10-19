@@ -61,9 +61,10 @@
             font-size: rem(24);
             text-transform: uppercase;
             transition: color 0.3s ease-in-out  0s;
+            color: #292758;
         }
         svg {
-        transition: fill 0.3s ease-in-out  0s;
+        transition: fill 0.3s ease-in-out  0s, transform 0.2s ease-in-out  0s;
         width: rem(24);
         height: rem(24);
         }
@@ -79,12 +80,14 @@
             background-color: #8060f640;
         }
         &:active {
-        transform: scale(1.03);
+            transform: scale(1.03);
+            svg {
+                transform: rotate(15deg);
+            }
         }
         &.active {
         background-color: #8060F6;
         border-radius: 100px;
-        
         p {
             color: var(--white-color);
         }
@@ -193,7 +196,8 @@
         }
     &__rectal {
         width: rem(441);
-        height: rem(289);
+        // height: rem(289);
+        height: 100%;
         background: linear-gradient(42deg, #292758 0%, #3A1FA0 100%);
         border-radius: 35px;
     }

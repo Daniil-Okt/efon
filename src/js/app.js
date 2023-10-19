@@ -174,9 +174,9 @@ toggleLinkMenuNoOpen()
 	* Вызвать функцию и передать в нее массив нужных элементов
 	* При клике на элемент, у всех элементов класс удаляется
 */
-// import { toggleActiveClass } from './modules/index.js'
-// const elementAll = document.querySelectorAll('.class');
-// toggleActiveClass(elementAll)
+import { toggleActiveClass } from './modules/index.js'
+const itemExperAll = document.querySelectorAll('.item-exper');
+toggleActiveClass(itemExperAll)
 
 
 
