@@ -8,12 +8,12 @@
  */
 // import MousePRLX from './libs/parallaxMouse'
 import AOS from 'aos'
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 
 import BaseHelpers from './helpers/BaseHelpers.js';
 import PopupManager from './modules/PopupManager';
 import BurgerMenu from './modules/BurgerMenu';
-// import Tabs from './modules/Tabs';
+import Tabs from './modules/Tabs';
 // import Accordion from './modules/Accordion.js';
 
 BaseHelpers.checkWebpSupport();
@@ -55,14 +55,16 @@ AOS.init();
 
 /* ТАБЫ ===================================================================================
  	* На wrapper блока табов добавить атрибут data-tabs="название"
+	* Для обертки title табов добавить класс "tabs__nav"
 	* Для title таба добавить класс "tabs__trigger"
+	* Для обертки body табов добавить класс "tabs__content"
 	* Для body таба добавить класс "tabs__panel"
 */
-// new Tabs('название', {
-// 	onChange: (data) => {
-// 		console.log(data);
-// 	},
-// });
+new Tabs('functional-tabs', {
+	onChange: (data) => {
+		console.log(data);
+	},
+});
 /* АККАРДЕОН ===================================================================================
  	* Класс wrapper блока аккардеона добавить в инициализацию аккардиона
 	* Каждый элемент аккардеона обернуть в блок с классом "accordion__item"
@@ -109,35 +111,36 @@ toggleLinkMenuNoOpen()
 
 /* Инициализация  swiper =================================================================================
 */
-// const swiper = new Swiper('.swiper', {
+// const swiper = new Swiper('.company__swiper', {
 //   speed: 800,
 //   spaceBetween: 16,
 //   slidesPerView: 1.4,
 //   modules: [Autoplay, Navigation, Pagination],
 //   loop: true,
 //   initialSlide: 1,
+//   slidesPerView: 'auto',
 //   autoplay: {
 //     delay: 2500,
 //     stopOnLastSlide: false,
 //     disableOnIteration: false,
 //   },
-//   navigation: {
-//     prevEl: ".reviews__button-slider-prev",
-//     nextEl: ".reviews__button-slider-next"
-//   },
-//   pagination: {
-//     el: ".card-slider__pagination",
-//     dynamicBullets: true,
-//     clickable: true,
-//   },
+// //   navigation: {
+// //     prevEl: ".reviews__button-slider-prev",
+// //     nextEl: ".reviews__button-slider-next"
+// //   },
+// //   pagination: {
+// //     el: ".card-slider__pagination",
+// //     dynamicBullets: true,
+// //     clickable: true,
+// //   },
 //   breakpoints: {
-//     1400: {
-//       slidesPerView: 4,
-//       spaceBetween: 24,
+//     1000: {
+//       slidesPerView: 5,
+//       spaceBetween: 128,
 //   	},
 //     1650: {
-//         slidesPerView: 4,
-//         spaceBetween: 48,
+//         slidesPerView: 'auto',
+//         spaceBetween: 128,
 //     }
 //   },
 // });

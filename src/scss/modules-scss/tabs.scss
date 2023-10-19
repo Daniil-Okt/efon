@@ -16,8 +16,8 @@
     transition: 0.2s ease-in-out;
 
     &.active {
-      background-color: #ff4040;
-      color: #fff;
+      // background-color: #ff4040;
+      // color: #fff;
     }
   }
 
@@ -27,7 +27,7 @@
 
   // .tabs__panel
   &__panel {
-    animation: fade-up-big 0.4s forwards;
+    animation: fade-up-big 0.8s forwards;
     display: none;
 
     &.active {

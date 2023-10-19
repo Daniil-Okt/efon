@@ -44,13 +44,18 @@
 * Модули используемые в проекте
 * Раскоментировать для использования
 */
-// @import 'components/popup';
-// @import 'components/checkbox';
-// @import 'components/tabs';
-// @import 'components/accordion';
+// @import 'modules-scss/popup';
+// @import 'modules-scss/checkbox';
+@import 'modules-scss/tabs';
+// @import 'modules-scss/accordion';
 /**
 * Подключение стилей отдельных блоков и секций
 */
 @import 'components/header';
 @import 'components/about';
+@import 'components/company';
+@import 'components/functional';
+
+
+
 @import 'components/footer';

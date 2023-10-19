@@ -24,3 +24,25 @@
     transition: all 0.2s ease-in-out  0s;
     // font-feature-settings: 'clig' off, 'liga' off;
 }
+
+h2 {
+        font-size: rem(56);
+        font-weight: 600;
+        margin-bottom: rem(80);
+        text-align: center;
+        color: #292758;
+        span {
+            color: #8060F6;
+        }
+        @media(max-width:1315px){
+            font-size: rem(40);
+            margin-bottom: rem(64);
+        }
+        @media(max-width:550px){
+            font-size: rem(35);
+            margin-bottom: rem(40);
+        }
+        @media(max-width:470px){
+            font-size: rem(32);
+        }
+}

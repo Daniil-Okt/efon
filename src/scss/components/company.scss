@@ -1,0 +1,90 @@
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+.company {
+    @include adaptiveClamp(margin-top, 128, 64);
+    border-top: 2px solid  #8060F6;
+    border-bottom: 2px solid#8060F6;
+    background:linear-gradient(42deg, #292758 0%, #3A1FA0 100%);
+    overflow: hidden;
+    user-select: none;
+    // &:hover &__wrapper {
+    //     animation-play-state: paused;
+        
+    // }
+    &__container {
+        height: rem(150);
+        display: flex;
+        align-items: center;
+        @media(max-width:1250px){
+            height: rem(120);
+        }
+        @media(max-width:800px){
+            height: rem(100);
+        }
+        @media(max-width:600px){
+            height: rem(80);
+        }
+    }
+
+    &__swiper {
+        margin: auto 0;
+        min-width: 100%;
+        display: flex;
+        gap: rem(128);
+        @media(max-width:1400px){
+            gap: rem(80);
+        }
+        @media(max-width:1000px){
+            gap: rem(50);
+        }
+        @media(max-width:600px){
+            gap: rem(32);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: rem(-200);
+        gap: rem(128);
+        counter-reset: item;
+        flex-shrink: 0;
+        animation: scroll 30s linear infinite;
+        min-width: 100%;
+        // width: 100%;
+        @media(max-width:1400px){
+            flex-shrink: 0.084;
+            gap: rem(80);
+        }
+        @media(max-width:1000px){
+            gap: rem(50);
+            flex-shrink: 0.092;
+        }
+        @media(max-width:600px){
+            flex-shrink: 0.277;
+            gap: rem(32);
+        }
+    }
+
+    &__slide {
+        width: auto;
+        // flex: 0 1 auto;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+            // max-width: 50%;
+        }
+    }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
