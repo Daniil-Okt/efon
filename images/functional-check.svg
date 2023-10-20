@@ -1,0 +1,11 @@
+<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic-actions-check-simple">
+<path id="Vector" d="M1.64844 4.63996L6.05844 9.03996L15.3484 0.959961" stroke="url(#paint0_linear_905_672)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_905_672" x1="1.68252" y1="0.959919" x2="16.2881" y2="3.24077" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFD4F"/>
+<stop offset="1" stop-color="#FFC24F"/>
+</linearGradient>
+</defs>
+</svg>
