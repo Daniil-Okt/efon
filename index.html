@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20231026231358">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231030194604">
   <title>Главная</title>
 </head>
 
@@ -91,7 +91,17 @@
                 </div>
             </div>
             <div class="about__video" data-da=".about__body, 1040, 1">
-                <picture><source srcset="images/abount-img.webp" type="image/webp"><img src="images/abount-img.png" loading="lazy" alt=""></picture>
+                <div class="about__video-row">
+                    <div class="video-button-play">
+                        <div class="video-button-play__button">
+                            <img src="images/video-button-play.svg" alt="">
+                        </div>
+                    </div>
+                    <video src="static/video/about.mp4" class="video-play-auto" width="100%" height="auto" preload="true" autoplay muted playsinline loop>
+                        <source src="static/video/about.mp4" type="video/mp4">
+                    </video>
+                </div>
+
             </div>
         </div>
     </div>
@@ -1296,6 +1306,6 @@
   </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20231026231358"></script>
+    <script src="js/app.min.js?_v=20231030194604"></script>
   </body>
 </html>
