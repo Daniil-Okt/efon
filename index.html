@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="ru">
   <head>
-  <style>.loaded { opacity: 1 }</style>
+  <style>.loaded .preload { opacity: 0 }</style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20231103200704">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231103224741">
   <title>Главная</title>
 </head>
 
   <body>
     <div class="wrapper">
+      <div class="preload">
+        <img src="images/preload.gif" loading="eager" alt="">
+      </div>
       <header class="header">
   <div class="header__container">
     <a href="index.html" class="header__logo logo">
@@ -19,9 +22,9 @@
     </a>
     <nav class="header__menu menu">
       <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Cases</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Rates</a></li>
+        <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+        <li class="menu__item"><a href="#cases" class="menu__link">Cases</a></li>
+        <li class="menu__item"><a href="#plans" class="menu__link">Rates</a></li>
         <li class="menu__item menu__item-button"><a href="#" class="menu__link">Book Demo</a></li>
       </ul>
       <div class="menu__bottom">
@@ -59,7 +62,7 @@
 </header>
       <main class="page">
         <div data-observ></div>
-        <section class="about">
+        <section class="about" id="about">
     <div class="about__container">
         <div class="about__row">
             <div class="about__body">
@@ -69,7 +72,8 @@
                     for your <span class="gradient-text">business</span> and <span class="gradient-text">website</span>
                 </h1>
                 <p class="about__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <span class="gradient-text">EFON</span> is a widget that you place on your website that provides customers with live video or audio consultations.
+                    
+                    The <span class="gradient-text">AI</span> onboarded CRM with video consultation and streaming module at the front end and huge data analytics module at the back end.
                 </p>
                 <div class="about__button-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" data-aos-anchor-placement="top-bottom">
                     <div class="button about__button">
@@ -97,8 +101,7 @@
                             <img src="images/video-button-play.svg" alt="">
                         </div>
                     </div>
-                    <video class="video-play-auto" width="100%" height="auto" preload="metadata" muted playsinline loop>
-                        
+                    <video class="video-play-auto" width="100%" height="auto" preload="metadata" poster="images/about-video-poster.png" muted playsinline loop>
                         <source src="static/video/about-video.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -194,7 +197,16 @@
     <div class="mobile__container">
         <div class="mobile__row">
             <div class="mobile__video" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
-                <picture><source srcset="images/mobile-img.webp" type="image/webp"><img src="images/mobile-img.png" alt="" loading="lazy"></picture>
+                <div class="about__video-row">
+                    <div class="video-button-play">
+                        <div class="video-button-play__button">
+                            <img src="images/video-button-play.svg" alt="">
+                        </div>
+                    </div>
+                    <video class="video-play-auto" width="100%" height="auto" preload="metadata" poster="images/mobile-video-poster.png" muted playsinline loop>
+                        <source src="static/video/mobile.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <h2 class="mobile__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 Your customers can also call from their mobile devices. <span>Fast and secure</span>
@@ -489,10 +501,10 @@
 </div>
         <div class="request">
     <div class="request__container">
-        <h2 class="request__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+        <h2 class="request__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             Request a <span>Demo</span>
         </h2>
-        <form action="#" class="request__form" id="form-request">
+        <form action="#" class="request__form" id="form-request" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
             <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" class="_email _req request__input">
             <button class="request__button-form">
                 <span>
@@ -633,7 +645,7 @@
         
     </div>
 </div>
-        <div class="cases">
+        <div class="cases" id="cases">
     <div class="cases__container">
         <h2 class="cases__title">
             Cases
@@ -723,7 +735,7 @@
         </div>
     </div>
 </div>
-        <div class="plans">
+        <div class="plans" id="plans">
     <div class="plans__container">
         <h2 class="plans__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             Plans
@@ -1198,139 +1210,70 @@
           <img src="images/logo.svg" alt="">
         </div>
         <p class="footer__text">
-          EFON is a tool to help increase online sales by growing website conversions and offering personalized customer service.
+          EFON Tech Ltd
+          <br>UAE, Dubai, DIFC
         </p>
-        <div class="footer__technical" data-da=".footer__bottom, 700, last">
-          <p>
-            © EFON, 2020–2023
+        <a href="#" class="footer__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0009 3H10.6343C14.7759 3.40833 17.0343 8.11667 15.0593 11.8083C13.0843 15.5 10.6426 17.3333 10.6426 17.3333C10.5811 17.4503 10.4888 17.5482 10.3758 17.6165C10.2627 17.6848 10.1331 17.7209 10.0009 17.7209C9.86883 17.7209 9.73923 17.6848 9.62614 17.6165C9.51305 17.5482 9.42078 17.4503 9.35928 17.3333C9.35928 17.3333 6.91761 15.45 4.94261 11.7833C2.96761 8.11667 5.20095 3.40833 9.36761 3H10.0009ZM12.4993 8.83333C12.4993 7.45262 11.3801 6.33333 9.99935 6.33333C8.61864 6.33333 7.49935 7.45262 7.49935 8.83333C7.49935 10.214 8.61864 11.3333 9.99935 11.3333C11.3801 11.3333 12.4993 10.214 12.4993 8.83333Z" fill="url(#paint0_linear_1134_2592)"/>
+            <defs>
+            <linearGradient id="paint0_linear_1134_2592" x1="4.21484" y1="3" x2="19.125" y2="8.27387" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#A088FB"/>
+            <stop offset="1" stop-color="#B8A6FB"/>
+            </linearGradient>
+            </defs>
+          </svg>
+          <p class="gradient-text">
+            Find us on Google Maps
           </p>
-          <p>
-            <span>
-              TECHNICAL SUPPORT:
-            </span>
-            <a href="#">support@efon.ru</a>
-          </p>
-        </div>
+        </a>
       </div>
       <div class="footer__item item-footer">
         <div class="item-footer__title">
-          Company
+          Request a Demo
         </div>
-        <ul class="item-footer__list">
-          <li class="item-footer__item">
-            <a href="#" class="item-footer__link">
-              Pricing
-            </a>
-          </li>
-          
-            <a href="#" class="item-footer__link">
-              About us
-            </a>
-          
-            <a href="#" class="item-footer__link">
-              API
-            </a>
-          
-          <li>
-            <a href="#" class="item-footer__link">
-              Careers
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              Contact
-            </a>
-          </li>
-        </ul>
+        <form action="#" class="request__form" id="form-footer">
+          <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" class="_email _req request__input">
+          <button class="request__button-form">
+              <span>
+                  OK
+              </span>
+          </button>
+      </form>
       </div>
       <div class="footer__item item-footer">
-        <div class="item-footer__title">
-          Industries
-        </div>
-        <ul class="item-footer__list">
-          <li class="item-footer__item">
-            <a href="#" class="item-footer__link">
-              E-commerce
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              Auto
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              Real estate
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              Banking
-            </a>
-          </li>
-            <a href="#" class="item-footer__link">
-              Medicine
-            </a>
-          
-        </ul>
-      </div>
-      <div class="footer__item item-footer">
-        <div class="item-footer__title">
-          Legal
-        </div>
-        <ul class="item-footer__list">
-          <li class="item-footer__item">
-            <a href="#" class="item-footer__link">
-              Terms and Conditions
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              License agreement
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              Privacy policy
-            </a>
-          </li>
-          <li>
-            <a href="#" class="item-footer__link">
-              Cookies policy
-            </a>
-          </li>
-            <a href="#" class="item-footer__link">
-              Copyright information
-            </a>
-          
-        </ul>
-        <div class="item-footer__social" data-da=".footer__bottom, 650, first">
+        <div class="item-footer__social-row">
+          <div class="item-footer__title">
+            Contact our team
+          </div>
           <div class="menu__social">
             <a href="#">
               <img src="images/menu-social-tel.svg" alt="">
             </a>
             <a href="#">
-              <img src="images/menu-social-yout.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="images/menu-social-twit.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="images/menu-social-face.svg" alt="">
-            </a>
-            <a href="#">
               <img src="images/menu-social-link.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="images/what-app.svg" alt="">
             </a>
           </div>
         </div>
+        
+        <div class="item-footer__text">
+          <p>
+            ASK A QUESTION: <a href="#" class="gradient-text">
+              hi@efon.ae
+            </a> 
+          </p>
+          <p>
+            © EFON, 2020–2023
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="footer__bottom">
-
     </div>
   </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20231103200704"></script>
+    <script src="js/app.min.js?_v=20231103224741"></script>
   </body>
 </html>
