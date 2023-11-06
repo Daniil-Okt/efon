@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   
-  <link rel="stylesheet" href="css/style.min.css?_v=20231106120032">
+  <link rel="stylesheet" href="css/style.min.css?_v=20231107021259">
   <title>Efon</title>
 </head>
 
@@ -1291,6 +1291,7 @@
                 Request a free demonstration
             </div>
             <form action="#" id="popup-form" class="popup-form__form">
+                <input type="text" id="plans" name="plans" class="popup-form__plans">
                 <div class="popup-form__item">
                     <label for="name" class="popup-form__label">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" class="_req popup-form__input">
@@ -1317,6 +1318,25 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20231106120032"></script>
+
+<div class="popup popup-form popup-tranks" data-popup="popup-tranks" data-close-overlay>
+    <div class="popup-form__wrapper popup__wrapper" data-close-overlay>
+        <div class="popup-form__content popup__content">
+            <div class="button-close popup-form__button-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M14.3606 14.3596L1.64062 1.63965" stroke="#292758" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+                <path d="M14.3606 1.63965L1.64062 14.3596" stroke="#292758" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+                </svg>
+            </div>
+            <div class="popup-form__title">
+                Thank you for your request. 
+                <br>We will keep in touch with you soon. 
+                <br>Have a great day!
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/app.min.js?_v=20231107021259"></script>
   </body>
 </html>
