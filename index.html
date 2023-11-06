@@ -6,8 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  
-  <link rel="stylesheet" href="css/style.min.css?_v=20231104102502">
+  <!-- <link rel="icon" type="image/png" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png"> -->
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Efon</title>
 </head>
 
@@ -24,9 +33,9 @@
     <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-        <li class="menu__item"><a href="#cases" class="menu__link">Cases</a></li>
+        <li class="menu__item"><a href="#functional" class="menu__link">Functional</a></li>
         <li class="menu__item"><a href="#plans" class="menu__link">Rates</a></li>
-        <li class="menu__item menu__item-button"><a href="#" class="menu__link">Book Demo</a></li>
+        <li class="menu__item menu__item-button"><a class="menu__link" data-type="popup-form">Book Demo</a></li>
       </ul>
       <div class="menu__bottom">
         <div class="menu__social">
@@ -73,16 +82,16 @@
                     for your <span class="gradient-text">business</span> and <span class="gradient-text">website</span>
                 </h1>
                 <p class="about__text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    
+                    <!-- <span class="gradient-text">EFON</span> is a widget that you place on your website that provides customers with live video or audio consultations. -->
                     The <span class="gradient-text">AI</span> onboarded CRM with video consultation and streaming module at the front end and huge data analytics module at the back end.
                 </p>
                 <div class="about__button-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" data-aos-anchor-placement="top-bottom">
-                    <div class="button about__button">
+                    <div class="button about__button" data-type="popup-form">
                         CHECK IT OUT
                     </div>
-                    <a href="#" class="about__button-starting">
+                    <div class="about__button-starting">
                         <p>Starting from <span>799</span> AED</p>
-                    </a>
+                    </div>
                 </div>
                 <div class="about__rates rates-about" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600" data-aos-anchor-placement="top-bottom">
                     <div class="rates-about__row-icon">
@@ -112,7 +121,7 @@
     </div>
 </section>
         <section class="company">
-    
+    <!-- <div class="company__container"> -->
         <div class="company__swiper items-wrap">
             <div class="company__wrapper items marquee">
                 <div class="company__slide">
@@ -191,7 +200,7 @@
                 </div>
             </div>
         </div>
-    
+    <!-- </div> -->
     
 </section>
         <section class="mobile">
@@ -215,7 +224,7 @@
         </div>
     </div>
 </section>
-        <section class="functional">
+        <section class="functional" id="functional">
     <div class="functional__container">
         <h2 class="functional__title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             Functional
@@ -495,9 +504,9 @@
                 </div>
             </div>
             <div class="luxuru__img">
-                
-                    <picture><source srcset="images/luxuru-img.webp" type="image/webp"><img src="images/luxuru-img.jpg" class="luxuru-img" alt=""></picture>
-                
+                <!-- <div class="luxuru__img-row"> -->
+                    <img src="images/luxuru-img.jpg" class="luxuru-img" alt="">
+                <!-- </div> -->
                 
             </div>
         </div>
@@ -509,7 +518,7 @@
             Request a <span>Demo</span>
         </h2>
         <form action="#" class="request__form" id="form-request" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
-            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" class="_email _req request__input">
+            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" class="_req _email request__input">
             <button class="request__button-form">
                 <span>
                     OK
@@ -524,7 +533,7 @@
     <div class="customer__video video-customer">
 
         <div class="video-customer__body">
-            <picture><source srcset="images/customer-img.webp" type="image/webp"><img src="images/customer-img.png" alt=""></picture>
+            <img src="images/customer-img.png" alt="">
             <div class="video-customer__content">
                 
                 <div class="video-customer__video-row">
@@ -560,35 +569,35 @@
             <div class="gear__icon-wrapper">
                 <div class="gear__icon bowl-icon">
                     <div class="bowl-icon__img">
-                        <picture><source srcset="images/bowl-icon.webp" type="image/webp"><img src="images/bowl-icon.png" alt=""></picture>
+                        <img src="images/bowl-icon.png" alt="">
                     </div>
                 </div>
                 <div class="gear__icon crown-icon">
-                    <picture><source srcset="images/crown-icon.webp" type="image/webp"><img src="images/crown-icon.png" alt=""></picture>
+                    <img src="images/crown-icon.png" alt="">
                 </div>
                 <div class="gear__icon palette-icon">
-                    <picture><source srcset="images/palette-icon.webp" type="image/webp"><img src="images/palette-icon.png" alt=""></picture>
+                    <img src="images/palette-icon.png" alt="">
                 </div>
                 <div class="gear__icon bag-icon">
-                    <picture><source srcset="images/bag-icon.webp" type="image/webp"><img src="images/bag-icon.png" alt=""></picture>
+                    <img src="images/bag-icon.png" alt="">
                 </div>
                 <div class="gear__icon place-icon">
-                    <picture><source srcset="images/place-icon.webp" type="image/webp"><img src="images/place-icon.png" alt=""></picture>
+                    <img src="images/place-icon.png" alt="">
                 </div>
                 <div class="gear__icon safe-icon">
-                    <picture><source srcset="images/safe-icon.webp" type="image/webp"><img src="images/safe-icon.png" alt=""></picture>
+                    <img src="images/safe-icon.png" alt="">
                 </div>
                 <div class="gear__icon tool-icon">
-                    <picture><source srcset="images/tool-icon.webp" type="image/webp"><img src="images/tool-icon.png" alt=""></picture>
+                    <img src="images/tool-icon.png" alt="">
                 </div>
                 <div class="gear__icon phone-icon">
-                    <picture><source srcset="images/phone-icon.webp" type="image/webp"><img src="images/phone-icon.png" alt=""></picture>
+                    <img src="images/phone-icon.png" alt="">
                 </div>
                 <div class="gear__icon heart-icon">
-                    <picture><source srcset="images/heart-icon.webp" type="image/webp"><img src="images/heart-icon.png" alt=""></picture>
+                    <img src="images/heart-icon.png" alt="">
                 </div>
                 <div class="gear__icon dumbbells-icon">
-                    <picture><source srcset="images/dumbbells-icon.webp" type="image/webp"><img src="images/dumbbells-icon.png" alt=""></picture>
+                    <img src="images/dumbbells-icon.png" alt="">
                 </div>
             </div>
             <div class="gear__body-row">
@@ -811,9 +820,9 @@
                             </li>
                         </ul>
                         <div class="item-plans__button-row">
-                            <a href="#" class="button item-plans__button">
+                            <div class="button item-plans__button" data-type="popup-form">
                                 SELECT
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -884,9 +893,9 @@
                             </li>
                         </ul>
                         <div class="item-plans__button-row">
-                            <a href="#" class="button item-plans__button">
+                            <div class="button item-plans__button" data-type="popup-form">
                                 SELECT
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -954,9 +963,9 @@
                             </li>
                         </ul>
                         <div class="item-plans__button-row">
-                            <a href="#" class="button item-plans__button">
+                            <div class="button item-plans__button" data-type="popup-form">
                                 SELECT
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1116,14 +1125,14 @@
             </div>
         </div>
         <div class="started__button-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
-            <div class="button started__button">
+            <div class="button started__button" data-type="popup-form">
                 Check it out
             </div>
         </div>
     </div>
 </section>
         <section class="company">
-    
+    <!-- <div class="company__container"> -->
         <div class="company__swiper items-wrap">
             <div class="company__wrapper items marquee">
                 <div class="company__slide">
@@ -1202,7 +1211,7 @@
                 </div>
             </div>
         </div>
-    
+    <!-- </div> -->
     
 </section>
       </main>
@@ -1237,7 +1246,7 @@
           Request a Demo
         </div>
         <form action="#" class="request__form" id="form-footer">
-          <input type="email" id="email2" name="email2" placeholder="Enter your email" autocomplete="email" class="_email _req request__input">
+          <input type="email" id="email2" name="email2" placeholder="Enter your email" autocomplete="email" class="_req _email request__input">
           <button class="request__button-form">
               <span>
                   OK
@@ -1278,6 +1287,45 @@
   </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20231104102502"></script>
+    <div class="popup popup-form" data-popup="popup-form" data-close-overlay>
+    <div class="popup-form__wrapper popup__wrapper" data-close-overlay>
+        <div class="popup-form__content popup__content">
+            <div class="button-close popup-form__button-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M14.3606 14.3596L1.64062 1.63965" stroke="#292758" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+                <path d="M14.3606 1.63965L1.64062 14.3596" stroke="#292758" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+                </svg>
+            </div>
+            <div class="popup-form__title">
+                Request a free demonstration
+            </div>
+            <form action="#" id="popup-form" class="popup-form__form">
+                <div class="popup-form__item">
+                    <label for="name" class="popup-form__label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="_req popup-form__input">
+                </div>
+                <div class="popup-form__item">
+                    <label for="tel" class="popup-form__label">Phone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Phone number" class="_req popup-form__input tel">
+                </div>
+                <div class="popup-form__item">
+                    <label for="email-popup" class="popup-form__label">Email</label>
+                    <input type="email-popup" id="email-popup" name="email" placeholder="Enter your email" class="_req _email popup-form__input">
+                </div>
+                <div class="popup-form__item">
+                    <input type="checkbox" id="policy" name="policy" class="_req popup-form__input-checkbox">
+                    <label for="policy" class="popup-form__label-checkbox">I consent to the processing and transfer of my personal data in accordance with the website's user agreement and confidentiality policy</label>
+                </div>
+                <div class="popup-form__item">
+                    <button type="submit" class="button popup-form__button">
+                        <span>SUBMIT Request</span>
+                    </button>
+                 
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
