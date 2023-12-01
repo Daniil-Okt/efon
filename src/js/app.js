@@ -112,7 +112,7 @@ toggleLinkMenuNoOpen()
 /* Инициализация  swiper =================================================================================
 */
 const swiper = new Swiper('.company__swiper', {
-	speed: 5000,
+	speed: 2000,
 	spaceBetween: 16,
 	// slidesPerView: 1.4,
 	modules: [Autoplay, Navigation, Pagination],
