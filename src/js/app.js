@@ -54,7 +54,7 @@ AOS.init();
 // new MousePRLX();
 
 /* ТАБЫ ===================================================================================
- 	* На wrapper блока табов добавить атрибут data-tabs="название"
+		* На wrapper блока табов добавить атрибут data-tabs="название"
 	* Для обертки title табов добавить класс "tabs__nav"
 	* Для title таба добавить класс "tabs__trigger"
 	* Для обертки body табов добавить класс "tabs__content"
@@ -66,7 +66,7 @@ new Tabs('functional-tabs', {
 	},
 });
 /* АККАРДЕОН ===================================================================================
- 	* Класс wrapper блока аккардеона добавить в инициализацию аккардиона
+		* Класс wrapper блока аккардеона добавить в инициализацию аккардиона
 	* Каждый элемент аккардеона обернуть в блок с классом "accordion__item"
 	* Для title аккардеона добавить класс "accordion__header"
 	* Для content аккардеона добавить класс "accordion__content"
@@ -111,40 +111,39 @@ toggleLinkMenuNoOpen()
 
 /* Инициализация  swiper =================================================================================
 */
-// const swiper = new Swiper('.company__swiper', {
-//   speed: 800,
-//   spaceBetween: 16,
-//   slidesPerView: 1.4,
-//   modules: [Autoplay, Navigation, Pagination],
-//   loop: true,
-//   initialSlide: 1,
-//   slidesPerView: 'auto',
-//   autoplay: {
-//     delay: 2500,
-//     stopOnLastSlide: false,
-//     disableOnIteration: false,
-//   },
-// //   navigation: {
-// //     prevEl: ".reviews__button-slider-prev",
-// //     nextEl: ".reviews__button-slider-next"
-// //   },
-// //   pagination: {
-// //     el: ".card-slider__pagination",
-// //     dynamicBullets: true,
-// //     clickable: true,
-// //   },
-//   breakpoints: {
-//     1000: {
-//       slidesPerView: 5,
-//       spaceBetween: 128,
-//   	},
-//     1650: {
-//         slidesPerView: 'auto',
-//         spaceBetween: 128,
-//     }
-//   },
-// });
-
+const swiper = new Swiper('.company__swiper', {
+	speed: 5000,
+	spaceBetween: 16,
+	// slidesPerView: 1.4,
+	modules: [Autoplay, Navigation, Pagination],
+	loop: true,
+	initialSlide: 1,
+	slidesPerView: 'auto',
+	autoplay: {
+		delay: 0,
+		stopOnLastSlide: false,
+		disableOnIteration: false,
+	},
+	//   navigation: {
+	//     prevEl: ".reviews__button-slider-prev",
+	//     nextEl: ".reviews__button-slider-next"
+	//   },
+	//   pagination: {
+	//     el: ".card-slider__pagination",
+	//     dynamicBullets: true,
+	//     clickable: true,
+	//   },
+	breakpoints: {
+		1000: {
+			slidesPerView: 5,
+			spaceBetween: 128,
+		},
+		1650: {
+			slidesPerView: 'auto',
+			spaceBetween: 128,
+		}
+	},
+});
 
 /* Валидация формы =======================================================================================
 * В константу записывает нужную форму
@@ -154,8 +153,8 @@ toggleLinkMenuNoOpen()
 * Добавить класс tel на input type='tel'
 * Добавить каласс _req на input которые нужно проверить
 * Добавить класс .popup-thanks для модального окна спасибо
-  Раскоментировать для использования
-*/ 
+	Раскоментировать для использования
+*/
 // import { validForm } from './modules/validFrom.js'
 // const popupTranks = document.querySelector('.popup-thanks')
 // const formNAME = document.getElementById('form-NAME')
